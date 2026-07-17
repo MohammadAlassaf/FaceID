@@ -1,0 +1,39 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Trained Model (Exceeds GitHub's 100MB file limit)
+siamesemodel.h5
+
+# TensorFlow Training Checkpoints
+training_checkpoints/
+
+# User datasets & private face images (Do not upload personal face data)
+data/anchor/*
+data/positive/*
+data/negative/*
+!data/anchor/.gitkeep
+!data/positive/.gitkeep
+!data/negative/.gitkeep
+
+# Temporary verification data
+application_data/input_images/*
+application_data/verification_images/*
+!application_data/input_images/.gitkeep
+!application_data/verification_images/.gitkeep
+
+# IDEs & Editor configurations
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
